@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>nmcapule.glitch.com</title>
+        <link rel="stylesheet" href="/resources/prism.css">
+        <link rel="stylesheet" href="/resources/tufte.css">
+        <link rel="stylesheet" href="/resources/custom.css">
+    </head>
+    <body>
+        <div>
+          <a href="/">Home</a>
+        </div>
+        <article>
+        <h2>{{ pageTitle }}</h2>
+        <section>{{ content }}</section>
+        </article>
+        {% for post in collections.posts %}
+            <h2><a href="{{ post.url }}">{{ post.data.pageTitle }}</a></h2>
+            <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+        {% endfor %}
+    </body>
+</html>
