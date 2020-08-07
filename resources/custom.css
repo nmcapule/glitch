@@ -1,0 +1,13 @@
+body {
+  font-size: 1.25em;
+}
+
+section > p,
+section > footer,
+section > table {
+  font-size: 1em;
+}
+
+section > pre {
+  width: 55%;
+}
